@@ -51,40 +51,11 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> burpsuite </tag>
             
-            <tag> 安全工具 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>xss攻击类型</title>
-      <link href="/2022/05/20/XSS%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB%20/"/>
-      <url>/2022/05/20/XSS%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB%20/</url>
-      
-        <content type="html"><![CDATA[<h1 id="XSS攻击分类"><a href="#XSS攻击分类" class="headerlink" title="XSS攻击分类"></a>XSS攻击分类</h1><h2 id="1-1、反射型xss攻击"><a href="#1-1、反射型xss攻击" class="headerlink" title="1.1、反射型xss攻击"></a>1.1、反射型xss攻击</h2><p>　　又称为非持久性跨站点脚本攻击，它是最常见的类型的XSS。漏洞产生的原因是攻击者注入的数据反映在响应中。一个典型的非持久性XSS包含一个带XSS攻击向量的链接(即每次攻击需要用户的点击)。</p><p><strong>简单例子</strong></p><p><strong>正常发送消息：</strong></p><p><a href="http://www.test.com/message.php?send=Hello,World%EF%BC%81">http://www.test.com/message.php?send=Hello,World！</a></p><p>接收者将会接收信息并显示Hello,Word</p><p>非正常发送消息：</p><p><a href="http://www.test.com/message.php?send=">http://www.test.com/message.php?send=</a><script>alert(‘foolish!’)</script>！</p><p>接收者接收消息显示的时候将会弹出警告窗口</p><h2 id="1-2、存贮型xss攻击"><a href="#1-2、存贮型xss攻击" class="headerlink" title="1.2、存贮型xss攻击"></a>1.2、存贮型xss攻击</h2><p>　　又称为持久型跨站点脚本，它一般发生在XSS攻击向量(一般指XSS攻击代码)存储在网站数据库，当一个页面被用户打开的时候执行。每当用户打开浏览器,脚本执行。持久的XSS相比非持久性XSS攻击危害性更大,因为每当用户打开页面，查看内容时脚本将自动执行。谷歌的orkut曾经就遭受到XSS。</p><p><strong>简单例子：</strong></p><p>从名字就可了解到存储型XSS攻击就是将攻击代码存入数据库中，然后客户端打开时就执行这些攻击代码。例如留言板</p><p>留言板表单中的表单域：<input type=“text” name=“content” value=“这里是用户填写的数据”></p><p><strong>正常操作：</strong></p><p>用户是提交相应留言信息；将数据存储到数据库；其他用户访问留言板，应用去数据并显示。</p><p><strong>非正常操作：</strong></p><p>攻击者在value填写<script>alert(‘foolish!’)</script>【或者html其他标签（破坏样式。。。）、一段攻击型代码】；</p><p>将数据存储到数据库中；</p><p>其他用户取出数据显示的时候，将会执行这些攻击性代码</p><h2 id="1-3、DOMBasedXSS（基于dom的跨站点脚本攻击）"><a href="#1-3、DOMBasedXSS（基于dom的跨站点脚本攻击）" class="headerlink" title="1.3、DOMBasedXSS（基于dom的跨站点脚本攻击）"></a>1.3、DOMBasedXSS（基于dom的跨站点脚本攻击）</h2><p>　　基于DOM的XSS有时也称为type0XSS。当用户能够通过交互修改浏览器页面中的DOM(DocumentObjectModel)并显示在浏览器上时，就有可能产生这种漏洞，从效果上来说它也是反射型XSS。</p><p>　　通过修改页面的DOM节点形成的XSS，称之为DOMBasedXSS。</p><p>　　前提是易受攻击的网站有一个HTML页面采用不安全的方式从document.location 或document.URL 或 document.referrer获取数据（或者任何其他攻击者可以修改的对象）。</p><p><strong>简单例子</strong>：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> 1 <span class="tag">&lt;<span class="name">HTML</span>&gt;</span></span><br><span class="line"> 2 <span class="tag">&lt;<span class="name">TITLE</span>&gt;</span>Welcome!<span class="tag">&lt;/<span class="name">TITLE</span>&gt;</span></span><br><span class="line"> 3 Hi</span><br><span class="line"> 4 <span class="tag">&lt;<span class="name">SCRIPT</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"> <span class="number">5</span> <span class="keyword">var</span> pos=<span class="variable language_">document</span>.<span class="property">URL</span>.<span class="title function_">indexOf</span>(<span class="string">&quot;name=&quot;</span>)+<span class="number">5</span>;</span></span><br><span class="line"><span class="language-javascript"> <span class="number">6</span> <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="variable language_">document</span>.<span class="property">URL</span>.<span class="title function_">substring</span>(pos,<span class="variable language_">document</span>.<span class="property">URL</span>.<span class="property">length</span>));</span></span><br><span class="line"><span class="language-javascript"> <span class="number">7</span> </span><span class="tag">&lt;/<span class="name">SCRIPT</span>&gt;</span></span><br><span class="line"> 8 <span class="tag">&lt;<span class="name">BR</span>&gt;</span></span><br><span class="line"> 9 Welcome to our system</span><br><span class="line">10 …</span><br><span class="line">11 <span class="tag">&lt;/<span class="name">HTML</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这个例子是个欢迎页面，name是截取URL中get过来的name参数</p><p><strong>正常操作：</strong></p><p><a href="http://www.vulnerable.site/welcome.html?name=Joe">http://www.vulnerable.site/welcome.html?name=Joe</a></p><p><strong>非正常操作：</strong></p><p><a href="http://www.vulnerable.site/welcome.html?name=">http://www.vulnerable.site/welcome.html?name=</a><script>alert(document.cookie)</script></p><p>　　将产生xss条件。让我们看看为什么：受害者的浏览器接收到这个链接，发送HTTP请求到<a href="http://www.vulnerable.site并且接受到上面的HTML页。受害者的浏览器开始解析这个HTML为DOM，DOM包含一个对象叫document，document里面有个URL属性，这个属性里填充着当前页面的URL。当解析器到达javascript代码，它会执行它并且修改你的HTML页面。倘若代码中引用了document.URL，那么，这部分字符串将会在解析时嵌入到HTML中，然后立即解析，同时，javascript代码会找到(alert(…))并且在同一个页面执行它，这就产生了xss的条件。">www.vulnerable.site并且接受到上面的HTML页。受害者的浏览器开始解析这个HTML为DOM，DOM包含一个对象叫document，document里面有个URL属性，这个属性里填充着当前页面的URL。当解析器到达javascript代码，它会执行它并且修改你的HTML页面。倘若代码中引用了document.URL，那么，这部分字符串将会在解析时嵌入到HTML中，然后立即解析，同时，javascript代码会找到(alert(…))并且在同一个页面执行它，这就产生了xss的条件。</a></p><p><strong>注意:</strong></p><p>　　1. 恶意程序脚本在任何时候不会嵌入到处于自然状态下的HTML页面（这和其他种类的xss不太一样）。</p><p>　　2.这个攻击只有在浏览器没有修改URL字符时起作用。 当url不是直接在地址栏输入，Mozilla.会自动转换在document.URL中字符&lt;和&gt;（转化为%3C 和 %3E），因此在就不会受到上面示例那样的攻击了，在IE6下没有转换&lt;和&gt;，因此他很容易受到攻击。</p><p>　　当然，直接嵌入到HTML只是攻击的一个挂载点，有很多脚本不需要依赖&lt;和&gt;漏洞，因此Mozilla通常也是无法阻止这些攻击的。</p><p>【这段出自：<a href="http://www.oschina.net/translate/dom-based-xss-of-third-kind%E3%80%91">http://www.oschina.net/translate/dom-based-xss-of-third-kind】</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网络安全 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> Web </tag>
             
-            <tag> XSS </tag>
-            
-            <tag> 渗透 </tag>
+            <tag> 安全工具 </tag>
             
         </tags>
       
@@ -167,38 +138,9 @@
       
         <tags>
             
-            <tag> 渗透 </tag>
-            
             <tag> Sql </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>HTTP协议详解以及URL具体访问过程</title>
-      <link href="/2022/05/05/HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3%E4%BB%A5%E5%8F%8AURL%E5%85%B7%E4%BD%93%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B%20/"/>
-      <url>/2022/05/05/HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3%E4%BB%A5%E5%8F%8AURL%E5%85%B7%E4%BD%93%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B%20/</url>
-      
-        <content type="html"><![CDATA[<h1 id="HTTP协议详解以及URL具体访问过程"><a href="#HTTP协议详解以及URL具体访问过程" class="headerlink" title="HTTP协议详解以及URL具体访问过程"></a><a href="https://www.cnblogs.com/phpstudy2015-6/p/6810130.html">HTTP协议详解以及URL具体访问过程</a></h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网站 </category>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> html </tag>
-            
-            <tag> Web </tag>
+            <tag> 渗透 </tag>
             
         </tags>
       

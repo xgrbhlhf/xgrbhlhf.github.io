@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> burpsuite </tag>
+            
+            <tag> Web </tag>
             
             <tag> 安全工具 </tag>
             
@@ -80,11 +80,11 @@
       
         <tags>
             
-            <tag> XSS </tag>
+            <tag> Web </tag>
             
             <tag> 渗透 </tag>
             
-            <tag> Web </tag>
+            <tag> XSS </tag>
             
         </tags>
       
@@ -109,9 +109,9 @@
       
         <tags>
             
-            <tag> 渗透 </tag>
-            
             <tag> Web </tag>
+            
+            <tag> 渗透 </tag>
             
             <tag> ssrf </tag>
             
@@ -167,9 +167,9 @@
       
         <tags>
             
-            <tag> 渗透 </tag>
-            
             <tag> Sql </tag>
+            
+            <tag> 渗透 </tag>
             
         </tags>
       

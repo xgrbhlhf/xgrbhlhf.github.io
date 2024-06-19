@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> 渗透 </tag>
+            
+            <tag> Web </tag>
             
             <tag> kali </tag>
             
@@ -82,9 +82,9 @@
       
         <tags>
             
-            <tag> burpsuite </tag>
-            
             <tag> Web </tag>
+            
+            <tag> burpsuite </tag>
             
             <tag> 安全工具 </tag>
             
@@ -111,11 +111,11 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> XSS </tag>
             
             <tag> 渗透 </tag>
+            
+            <tag> Web </tag>
             
         </tags>
       
@@ -140,9 +140,9 @@
       
         <tags>
             
-            <tag> Web </tag>
-            
             <tag> 渗透 </tag>
+            
+            <tag> Web </tag>
             
             <tag> ssrf </tag>
             

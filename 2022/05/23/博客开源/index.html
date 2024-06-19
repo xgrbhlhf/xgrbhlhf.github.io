@@ -455,7 +455,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    995
                 </div>
                 
 
@@ -480,9 +480,8 @@
                 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于我们很多人来说，拥有应该属于自己的个人博客是一件很酷的事情，博客不仅可以作为自己的在线笔记本，做做学习记录，分享一些学到的东西，使用第三方提供的博客服务其实也挺方便，现在市面上提供类似服务的博客网站也很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。但是缺点是比较不自由，会受到平台的各种限制和恶心的广告，个性化不足。而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，也是没有这样的精力和时间。那么，我们能不能自己定制一个自己喜欢的个性化博客，同时也不用付出太高的成本啦？</p>
 <p>这就引出了第三种选择，基于开源框架搭建博客，然后直接在<code>github page</code>平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，基于这个想法，今年8月初的时候开始搭建第一个属于自己的独立博客，前后断续弄了近一周，到现在稍微有点模样了。我想可能有很多小伙伴应该也想过搭建一个自己的博客，当然，网上也有一堆详细教程。写这篇博客的目的大概有两个，第一个是当做自己的搭建记录，方便以后自己随时查看提示修改，第二个是稍稍总结一下具体的搭建步骤以及一些支持个性化定制的博客源码修改的教程，稍稍分享一下这些修改经验，当然，更多的一些个性化操作需要你自己以后在这个基础上慢慢去摸索，有些写的不太好的地方还希望看到的小伙伴多多包涵。</p>
 <p>本博客基于<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>，所以首先要了解一下我们搭建博客所要用到的框架。<code>Hexo</code>是高效的静态网站生成框架，它基于<code>Node.js</code>，快速，简单且功能强大，是搭建博客的首选框架。大家可以进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a>官网进行详细查看，因为<code>Hexo</code>的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。通过<code>Hexo</code>，你可以直接使用<code>Markdown</code>语法来撰写博客。相信很多小伙伴写工程都写过<code>README.md</code>文件吧，对，就是这个格式的！写完后只需两三条命令即可将生成的网页上传到<code>github</code>或者<code>coding</code>等代码管理托管平台，然后别人就可以浏览你的博客网页啦。是不是很简单？你无需关心网页源代码的具体生成细节，只需要用心写好你的博客文章内容就行了。</p>
-<p>本博客基于<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>，所以首先要了解一下我们搭建博客所要用到的框架。<code>Hexo</code>是高效的静态网站生成框架，它基于<code>Node.js</code>，快速，简单且功能强大，是搭建博客的首选框架。大家可以进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a>官网进行详细查看，因为<code>Hexo</code>的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。通过<code>Hexo</code>，你可以直接使用<code>Markdown</code>语法来撰写博客。相信很多小伙伴写工程都写过<code>README.md</code>文件吧，对，就是这个格式的！写完后只需两三条命令即可将生成的网页上传到<code>github</code>或者<code>coding</code>等代码管理托管平台，然后别人就可以浏览你的博客网页啦。是不是很简单？你无需关心网页源代码的具体生成细节，只需要用心写好你的博客文章内容就行了。</p>
-<h1 id="博客开源"><a href="#博客开源" class="headerlink" title="博客开源"></a>博客开源</h1><p>当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的<code>blog</code>网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎PR！最后，我们还是给这个开源小项目取个名字吧，就叫<a target="_blank" rel="noopener" href="https://github.com/xgrbhlhf/xgrbhlhf.github.io">hexo-theme-matery-develop</a>吧，怎么样？</p>
-<p>本博客基于<code>Hexo</code>框架搭建，用到<a target="_blank" rel="noopener" href="https://github.com/shw2018/hexo-theme-matery">hexo-theme-matery</a>主题,并在此基础之上做了很多修改，修复了一些bug，增加了一些新的特性和功能</p>
+<h1 id="博客开源"><a href="#博客开源" class="headerlink" title="博客开源"></a>博客开源</h1><p>当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的<code>blog</code>网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎PR！</p>
+<p>本博客基于<code>Hexo</code>框架搭建，用到<a target="_blank" rel="noopener" href="https://github.com/shw2018/hexo-theme-matery">hexo-theme-matery</a>主题</p>
 
                 
             </div>
